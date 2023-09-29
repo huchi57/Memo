@@ -28,7 +28,9 @@ When a deletion is executed, the brush finds all children objects under the obje
 
 This problem can be breakdown into solving this generic question: *Given an arbitrary point, how can we know if it is inside a convex polyhedron?*
 
-## Determine whether a point is inside a convex polyhedron
+It can be break down into three types of shapes: general convex polyhedron, cylinder, and sphere.
+
+## General Solution: Determine whether a point is inside a convex polyhedron
 - V = 0
   - There are no vertecies. No point can be in this shape.
 - V = 1 (Dot)
@@ -86,3 +88,11 @@ function IsPointInConvexPolyhedron(Point P, Polyhedron H)
                 return true
 return false
 ```
+
+## Special Case - Cylinder
+To determine if a point is inside a cylinder, we need to know the two center of the both surface on the two ends, and the radius of the cylinder. The point is in the cylinder if both conditions meet:
+- The distance between the axis of the cylinder is less than the radius.
+- The point is inside the space between the two planes expanded from both end surfaces of the cylinder.
+
+## Special Case - Sphere
+It is very straightforward to determine if a point is in a sphere. We only need to see if the distance to the point to the center of the sphere is greater than the radius.
