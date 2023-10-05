@@ -32,7 +32,8 @@ Video link: [Unreal Engine 5 - Full Course for Beginners](https://youtu.be/6UlU_
   - `Ctrl`: Get
   - `Alt`: Set
 
-#### Common nodes (keywords)
+### Common Blueprint Nodes (keywords)
+#### C++-ish Nodes
 - Increment (++)
 - Decrement (--)
 - Flip Flop
@@ -41,8 +42,17 @@ Video link: [Unreal Engine 5 - Full Course for Beginners](https://youtu.be/6UlU_
 - Switch
 - Cast
 - Is Valid
+
+#### Constructors
 - Construct Object from Class
 - Spawn Actor from Class
+
+#### Debug and Texts
+- Line Trace ...
+- Draw Debug ... (shape)
+- Format Text
+- Make Literal String
+
 - ActorBeginOverlap
 - ActorEndOverlap
 - Get Actor Location
@@ -57,10 +67,6 @@ Video link: [Unreal Engine 5 - Full Course for Beginners](https://youtu.be/6UlU_
 - Get Actor Forward / Right / Up Vector
 - Set Timer ...
 - Clear and Invalidate Timer by Handle
-- Line Trace ...
-- Draw Debug ... (shape)
-- Format Text
-- Make Literal String
 - Open Level (by Name / Object Reference)
 - Set Input Mode ... (mode name)
 
@@ -99,3 +105,22 @@ Video link: [Unreal Engine 5 - Full Course for Beginners](https://youtu.be/6UlU_
 - `Show Mouse Cursor` is set in the `Player Controller`.
 
 ### Blueprint Function Libraries
+
+### C++: Inheritence Hierarchy
+- UObject
+  - AActor
+    - APawn
+      - ACharacter
+    - AController
+      - APlayerController
+    - AInfo
+      - AGameModeBase
+        - AGameMode *(Exist only on servers)*
+      - AGameStateBase
+        - AGameState *(Exists both on servers and players)*
+      - APlayerState
+  - UGameInstance
+  - ... UUserWidget
+
+### C++ and Blueprint
+For example, we want to create a character. It is essential to have basic game logic (mission critical stuffs) set up in a C++ class. After that, create a Blueprint class inherit from that C++ class, and that Blueprint will inherit all properties from the C++ class.
