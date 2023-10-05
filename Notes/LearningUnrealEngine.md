@@ -17,11 +17,14 @@ Video link: [Unreal Engine 5 - Full Course for Beginners](https://youtu.be/6UlU_
   - Pure functions do not modify states and class members.
   - Pure functions are usually getter functions.
 - Right click on a Cast node and select `Convert to pure cast` to make it a pure cast (assuming a cast always success).
+- Right click on a variable node and select `Convert to Validated Get` to get validated in one node.
+- Variables can have `Private`, `Instance Editable`, and `Expose on Spawn` enabled/disabled.
 
 #### Some hotkeys
 - `C`: Comment (selecting nodes will automatically encapsulates them)
-- `G`: Toggle outlines
+- `G`: Toggle gizmos
 - `F8` (When playing): Unpocess the character
+- `F11`: Fullscreen
 - `Mouse Left Click` combinations:
   - `B`: Branch
   - `D`: Delay
@@ -40,10 +43,26 @@ Video link: [Unreal Engine 5 - Full Course for Beginners](https://youtu.be/6UlU_
 - Is Valid
 - Construct Object from Class
 - Spawn Actor from Class
+- ActorBeginOverlap
+- ActorEndOverlap
+- Get Actor Location
+- Get Overlapping Actors
 - Get Outer Object
+- Get Player Camera Manager
 - Add Movement Input
+- Add Impulse
 - Add Controller Pitch / Yaw Input
-- Get Actor Forward / Right / Up Vector 
+- Add Custom Event
+- Add to Viewport
+- Get Actor Forward / Right / Up Vector
+- Set Timer ...
+- Clear and Invalidate Timer by Handle
+- Line Trace ...
+- Draw Debug ... (shape)
+- Format Text
+- Make Literal String
+- Open Level (by Name / Object Reference)
+- Set Input Mode ... (mode name)
 
 ### Classes
 #### Inheritence Hierarchy for Common Classes
@@ -64,3 +83,19 @@ Video link: [Unreal Engine 5 - Full Course for Beginners](https://youtu.be/6UlU_
 2. In the World Settings panel, set the `GameMode Override` to the new Game Mode.
 3. Set other overrides like Player Controller.
    - Player Controller persists even when the Character dies.
+
+### Timer
+1. Create a function.
+2. Create a node `Set Timer by Function Name` and connect from `BeginPlay`.
+3. Promote the return value to be a `Timer Handler`.
+4. In the function, drag the `Timer Handler` variable and add it with a node `Clear and Invalidate Timer by Handle`.
+
+### UI
+1. Create a Widget Blueprint by: right click in the Content panel > User Interface > Widget Blueprint.
+2. In the Widget Blueprint, create a Canvas.
+3. Usually in the Game Controller, add custom event > `Create Widget` > `Add to Viewport`.
+   - A widget created has to be added to viewport to be visible.
+
+- `Show Mouse Cursor` is set in the `Player Controller`.
+
+### Blueprint Function Libraries
