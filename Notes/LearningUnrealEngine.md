@@ -31,6 +31,7 @@ Video link: [Unreal Engine 5 - Full Course for Beginners](https://youtu.be/6UlU_
 - When dragging a variable:
   - `Ctrl`: Get
   - `Alt`: Set
+- `Ctrl` + `F`: Find
 
 ## Common Blueprint Nodes (keywords)
 ### C++-ish Nodes
@@ -180,7 +181,9 @@ public:
 - `UFUNCTION` does not support function overloadings.
 - Examples:
   - `BlueprintCallable`: Makes this function callable in the Blueprint editor.
-  - `BlueprintPure`: Marks it as a pure function (it will have no exec wires).
+  - `BlueprintPure`: Marks it as a pure function (green node, it will have no exec wires).
+  - `BlueprintImplementableEvent`: Makes this as an implementable event (red node) in the Blueprint editor.
+  - `BlueprintNativeEvent`: For situations where you provide default C++ implementation but give opportunity to override it in Blueprints.
 
 ### UPARAM
 - Examples:
@@ -224,3 +227,11 @@ struct FBook
 - Structs do not support `UFUNCTION`s.
   - Workarounds: add functions in function library classes, or defined in other object classes.
 
+## Blueprint Interface
+1. Create a Blueprint Interface asset.
+2. In the Blueprint that wants to implement the interface, go to Class Settings, and implement the interface.
+
+## C++ Interface
+1. Create an interface inherited from Unreal Interface.
+2. Make functions to be implemeted `virtual`.
+3. Include the header file in classes that wants to implement this interface.
