@@ -182,7 +182,7 @@ public:
   - `BlueprintCallable`: Makes this function callable in the Blueprint editor.
   - `BlueprintPure`: Marks it as a pure function (it will have no exec wires).
 
-#### UPARAM
+### UPARAM
 - Examples:
   - `ref`: Makes the parameter a reference in the Blueprint editor.
   - `(UPARAM(ref)int& Value)` in function parameter declarations will make this parameter a *input reference*.
