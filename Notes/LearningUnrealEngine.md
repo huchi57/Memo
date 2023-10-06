@@ -186,6 +186,18 @@ public:
   - `(UPARAM(ref)int& Value)` in function parameter declarations will make this parameter a *input reference*.
   - `(&int Value)` in function parameter declarations will make it an *output* in the Blueprint editor. (This is how Blueprint handles multiple return values.)
 
+## C++ Example: enum
+
+```
+UENUM(BlueprintType)
+enum FruitType
+{
+	Lingo UMETA(DisplayName = "Apple"),
+	Banana,
+	Mango
+};
+```
+
 ## C++ Example: struct
 
 ```
