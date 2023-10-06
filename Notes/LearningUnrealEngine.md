@@ -53,6 +53,7 @@ Video link: [Unreal Engine 5 - Full Course for Beginners](https://youtu.be/6UlU_
 - Format Text
 - Make Literal String
 
+### Others
 - ActorBeginOverlap
 - ActorEndOverlap
 - Get Actor Location
@@ -91,7 +92,7 @@ Video link: [Unreal Engine 5 - Full Course for Beginners](https://youtu.be/6UlU_
 3. Set other overrides like Player Controller.
    - Player Controller persists even when the Character dies.
 
-## Timer
+## Blueprint Example: Timer
 1. Create a function.
 2. Create a node `Set Timer by Function Name` and connect from `BeginPlay`.
 3. Promote the return value to be a `Timer Handler`.
@@ -106,6 +107,7 @@ Video link: [Unreal Engine 5 - Full Course for Beginners](https://youtu.be/6UlU_
 - `Show Mouse Cursor` is set in the `Player Controller`.
 
 ## Blueprint Function Libraries
+Useful for creating helper functions.
 
 ## C++: Inheritence Hierarchy
 - UObject
