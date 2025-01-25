@@ -11,5 +11,7 @@
 
 ## UFUNCTION
 - `BlueprintCallable`
-- `BlueprintImplementableEvent`: It can be implemented in Blueprints.
+- `BlueprintImplementableEvent`: It can be implemented in Blueprints. No implementation from C++.
+- `BlueprintNativeEvent`: Cam be both implemented in C++ and Blueprints.
+  - Create a function with `_Implementation()` prefix to implement in C++.
 - ...
