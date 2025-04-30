@@ -57,11 +57,11 @@ For example, a Package that contains the main game, and another that contains th
 
 
 ## Uploading to Steam
-### Prerequisits
+### I. Prerequisite
 1. Download SteamworksSDK and extract the folders.
 2. Also extract `sdk\tools\SteamPipeGUI.zip`.
 
-### Steps for Uploading a Depot Using SteamPipeGUI (on Windows)
+### II. Steps for Uploading a Depot Using SteamPipeGUI (on Windows)
 1. Go to `sdk\tools\ContentBuilder\content\` and create a new folder (any name) for each Depots.
 2. Copy all the build files of the game to this folder.
 3. Run `SteamPipeGUI.exe`.
@@ -75,5 +75,5 @@ For example, a Package that contains the main game, and another that contains th
    - This is only needed if new Depots have been added, or if the configuration files have been lost.
 9. Press `Upload` and follow the steps on the pop-up command line window.
 
-### Steps on the Steamworks Website
+### III. Steps on the Steamworks Website
 1. (TODO)
