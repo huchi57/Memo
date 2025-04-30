@@ -78,4 +78,11 @@ For example, a Package that contains the main game, and another that contains th
 ![SteamPipeGUI](Resources/SteamPipeGUI.jpg)
 
 ### III. Steps on the Steamworks Website
-1. (TODO)
+1. Press `Edit Steamworks Settings` on the game's Steamworks page.
+2. (Optional) Go to `Installation > General Installation` if this is the first time uploading a Build.
+   - Then, add `Add new launch option`, create a launch option of the game, and publish the changes.
+   - The game is NOT PUBLISHED YET by doing this.
+3. Go to the `SteamPipe > Builds` section. This should list all the Builds that haven been uploaded.
+4. Set the Build's Branch as default and preview change.
+   - This only means people that have access to the default Branch (by having a key or by buying the game) can access the game.
+   - It does not mean random people can download it now.
