@@ -73,7 +73,7 @@ For example, a Package that contains the main game, and another that contains th
    - `Depot ID` should be filled automatically, but it can also be checked in the game's Depot page on the Steamworks page.
 7. Fill in the path of the `ContentBuilder` and login credentials.
 8. Press `Generate VDFs` if this is the first time building the game.
-   - This is only needed if a new Depots has been added, or if the configuration files have been lost.
+   - This is only needed if new Depots have been added, or if the configuration files have been lost.
 9. Press `Upload` and follow the steps on the pop-up command line window.
 
 ### Steps on the Steamworks Website
