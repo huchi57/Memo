@@ -10,10 +10,9 @@
 ## Depot
 A collection of files Steam deliver to devices.
 
-Usually only have 1 Depot that contains the latest version of the game.
+Usually only one Depot that contains the latest version of the game is needed.
 
 We can decide which players have access to which Depots.
-
 
 ### Situations for more Depots:
 - **Multiple Platforms:** One Depot for Windows version, one Depot for Mac version...
@@ -48,9 +47,9 @@ We can decide how many Branches there are, and which Build is active on which Br
 ## Package
 Packages are how players can have access to games.
 
-The simplest way is that players buy the game on the Steam page.
+The simplest way players can do so is by buying the game on the Steam page.
 
-Meaning they buy the default store Package, and gain accesses to that Package.
+It means that they buy the default store Package, and they gain accesses to that Package.
 
 More Packages can be defined to set what applications and/or what Depots each Package contains.
 
