@@ -75,5 +75,7 @@ For example, a Package that contains the main game, and another that contains th
    - This is only needed if new Depots have been added, or if the configuration files have been lost.
 9. Press `Upload` and follow the steps on the pop-up command line window.
 
+![Resources/SteamPipeGUI.png](Resources/SteamPipeGUI.png)
+
 ### III. Steps on the Steamworks Website
 1. (TODO)
